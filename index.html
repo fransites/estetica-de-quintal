@@ -250,7 +250,7 @@
   /* =========================================================
      FEEDBACKS
      ========================================================= */
-  .feedbacks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .feedbacks-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
   .feedback{
     background:var(--bg-card);padding:34px 28px;border-radius:var(--radius);
     border-left:4px solid var(--orange);position:relative;
@@ -379,6 +379,8 @@
 
   /* Responsivo */
   @media (max-width:860px){
+    .feedbacks-grid{grid-template-columns:1fr}
+
     .services-grid{grid-template-columns:1fr}
     .quote-note{display:flex;text-align:left;align-items:flex-start;justify-content:center;max-width:320px;margin-left:auto;margin-right:auto}
     .quote-note svg{margin-top:3px}
@@ -573,7 +575,7 @@
         </div>
         <ul class="features">
           <li>Lavagem técnica com desmontagem</li>
-          <li>Limpeza interna (banco, laterais e pedaleiras)</li>
+          <li>Limpeza interna (banco, laterais e pião)</li>
           <li>Revitalização de plásticos</li>
           <li>Cera e selante de pneu</li>
           <li>Restauração de escape</li>
@@ -611,23 +613,32 @@
       <h2>O que dizem nossos clientes</h2>
       <div class="bar"></div>
     </div>
-    <div class="feedbacks-grid">
-      <!-- TODO: editar depoimentos reais -->
+    
+<div class="feedbacks-grid">
       <div class="feedback reveal">
-        <p>Levei minha CB 500 e voltou parecendo nova. Cuidado absurdo com cada detalhe da moto.</p>
-        <div class="author"><div class="avatar">R</div><div><strong>Ricardo M.</strong><span>Motociclista — Guarulhos/SP</span></div></div>
+        <p>“Irmão muito obrigado, o trampo ficou muito top. Eu gostei muito, que Deus te abençoe. Virei cliente kkkk”</p>
+        <div class="author"><div class="avatar">N</div><div><strong>Nicolas</strong></div></div>
       </div>
+
       <div class="feedback reveal">
-        <p>Atendimento atencioso e capricho de verdade na minha MT-03. Já é meu lugar de confiança.</p>
-        <div class="author"><div class="avatar">J</div><div><strong>Juliana S.</strong><span>Cliente desde 2024</span></div></div>
+        <p>“Que clareamento fudido nesse motor em tá poha mano, você manda muito irmão ❤️<br>01 das lavagens, sou seu fã”</p>
+        <div class="author"><div class="avatar">E</div><div><strong>Estevão</strong></div></div>
       </div>
+
       <div class="feedback reveal">
-        <p>Detalhamento de quintal com qualidade de boutique. Recomendo a todo motociclista da região.</p>
-        <div class="author"><div class="avatar">A</div><div><strong>André T.</strong><span>Cliente fiel</span></div></div>
+        <p>“Muito obrigado mano, trabalho top!”</p>
+        <div class="author"><div class="avatar">A</div><div><strong>Alex</strong></div></div>
+      </div>
+
+      <div class="feedback reveal">
+        <p>“Irmão, muito obrigado pela atenção que você deu nela… Cara, é outra moto.<br>Todo mundo onde eu passo tá olhando e perguntando. Ficou surreal, você é incrível irmão, muito obrigado ❤️”</p>
+        <div class="author"><div class="avatar">J</div><div><strong>Jhonatan Gabriel</strong></div></div>
       </div>
     </div>
+
   </div>
 </section>
+
 
 <!-- ========== AGENDAMENTO ========== -->
 <section class="booking" id="agendamento">
