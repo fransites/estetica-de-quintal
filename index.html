@@ -45,10 +45,10 @@
      RESET & BASE
      ========================================================= */
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;overflow-x:hidden}
   body{
     font-family:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
-    background:#0d0d0d;color:#e8e8e8;line-height:1.65;overflow-x:hidden;
+    background:#0d0d0d;color:#e8e8e8;line-height:1.65;overflow-x:hidden;width:100%;
     -webkit-font-smoothing:antialiased;
   }
   img{max-width:100%;display:block}
@@ -469,7 +469,7 @@
     <h1>Sua moto merece <span class="accent">cuidado de verdade</span></h1>
     <p class="sub">Estética automotiva especializada em motos. Detalhamento técnico, com produtos profissionais e atendimento com hora marcada.</p>
     <div class="hero-buttons">
-      <a href="#servicos" class="btn btn-outline" data-scroll>Ver serviços</a>
+      <a href="#lavagem-rotina" class="btn btn-outline" data-scroll>Ver serviços</a>
       <a href="#agendamento" class="btn btn-primary" data-scroll>Agendar agora</a>
     </div>
   </div>
@@ -477,7 +477,7 @@
 
 
 <!-- ========== LAVAGEM EXPRESS ========== -->
-<section class="express" id="express">
+<section class="express" id="lavagem-rotina">
   <div class="container">
     <div class="express-grid">
       <div class="express-text reveal">
@@ -519,6 +519,7 @@
         <span class="from">A partir de</span>
         <span class="price">R$ 30,00</span>
       </div>
+
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
         <h3>Pião + Protetor de Corrente</h3>
@@ -526,6 +527,7 @@
         <span class="from">A partir de</span>
         <span class="price">R$ 45,00</span>
       </div>
+
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg></div>
         <h3>Clareamento de Bacalhau</h3>
@@ -533,19 +535,21 @@
         <span class="from">A partir de</span>
         <span class="price">R$ 30,00</span>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
-        <h3>Clareamento do Motor</h3>
-        <p>Detalhamento profundo para um motor com aparência de novo.</p>
-        <span class="from">A partir de</span>
-        <span class="price">R$ 100,00</span>
-      </div>
+
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <h3>Clareamento da Bengala</h3>
         <p>Limpeza especializada da suspensão dianteira.</p>
         <span class="from">A partir de</span>
         <span class="price">R$ 20,00</span>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
+        <h3>Clareamento do Motor</h3>
+        <p>Detalhamento profundo para um motor com aparência de novo.</p>
+        <span class="from">A partir de</span>
+        <span class="price">R$ 100,00</span>
       </div>
     </div>
 
@@ -621,7 +625,7 @@
       </div>
 
       <div class="feedback reveal">
-        <p>“Que clareamento fudido nesse motor em tá poha mano, você manda muito irmão ❤️<br>01 das lavagens, sou seu fã”</p>
+        <p>“Que clareamento fudido nesse motor em tá poha mano, você manda muito irmão ❤️ 01 das lavagens, sou seu fã”</p>
         <div class="author"><div class="avatar">E</div><div><strong>Estevão</strong></div></div>
       </div>
 
